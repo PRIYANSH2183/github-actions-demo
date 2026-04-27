@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Create log file
-        run: echo "ERROR: Something went wrong" > file.txt
+        run: 'echo "ERROR: Something went wrong" > file.txt'
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
