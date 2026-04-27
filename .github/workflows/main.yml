@@ -1,6 +1,7 @@
 name: Job Pipeline
 
-on: push
+on:
+  push:
 
 jobs:
   job1:
@@ -17,8 +18,8 @@ jobs:
           path: file.txt
 
   job2:
-    runs-on: ubuntu-latest
     needs: job1
+    runs-on: ubuntu-latest
 
     steps:
       - name: Download artifact
